@@ -1,2 +1,19 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h1>Hello Kitty ^.^</h1>
+<p>View Me in views/static/index.html.erb</p>
+
+<form action="#" method="">
+	Enter URL:
+	<input type ="text" name="long_url">
+	<input type ="submit" value="Submit">
+</form>
+
+<table id="table1">
+
+<% @urls.each do |x|%>
+	<tr>
+		<td><%= x.long_url %></td>
+		<td><%= x.short_url %></td>
+		<td><%= x.click_count %></td>
+	</tr>
+<% end %>
+</table>
